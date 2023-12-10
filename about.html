@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header nav {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 12;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar {
+            width: 90%;
+            display: flex;
+            margin: 20px auto 0 auto;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header nav .logo {
+            height: 100px;
+            width: 150px;
+        }
+
+        .logo img {
+            height: 90%;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        nav .menu {
+            display: flex;
+        }
+
+        nav .menu li {
+            list-style: none;
+            margin: 0 10px;
+        }
+
+        nav .menu a {
+            color: #2c3e50;
+            font-size: 17px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        nav .menu a:hover {
+            color: #000;
+        }
+
+        /* Add a class to the navbar on scroll */
+        .highlight-bg {
+            background-color: #406d68;
+        }
+
+        /* About Page Styles */
+        .about-container {
+            padding: 50px;
+            margin-top: 150px; /* Adjust the margin as needed */
+        }
+
+        .styled-textbox {
+            background-color: #ecf0f1;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Search Box Styles */
+      /* Search Box Styles */
+.search-box {
+    position: relative;
+    height: 40px;
+    width: 250px;
+}
+
+.search-box input[type="text"] {
+    position: absolute;
+    font-size: 18px;
+    height: 100%;
+    width: calc(100% - 30px); /* Adjusted width */
+    border-radius: 8px;
+    outline: none;
+    color: #2c3350;
+    border: 2px solid #2c3350;
+    background: #f2f2f2;
+    padding: 0 10px;
+}
+
+.search-box a {
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 25px); /* Adjusted position */
+    font-size: 20px;
+    color: #2c3350;
+    transform: translateY(-50%);
+    border-right: 2px solid #2c3350;
+    padding: 0 5px 0 0;
+
+    
+
+        }
+        .pic{
+        width: 50%;
+        padding: 20%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <img src="dsaasdasdasdas.png" alt="" class="pic">
+        <div class="styled-textbox">
+            <h2>About</h2>
+            <p>In 2018, my family and I continued our annual tradition of bonding trips to Zambales. This had been a cherished practice since my childhood. Although we frequented Zambales each year, it was our first time visiting the renowned Whiterock Beach. The experience at this famous beach was truly exceptional, marking a memorable addition to our family adventures.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; My Personal Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add a class to the navbar on scroll
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('header nav');
+            navbar.classList.toggle('highlight-bg', window.scrollY > 0);
+        });
+    </script>
+
+</body>
+
+</html>
